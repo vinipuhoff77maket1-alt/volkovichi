@@ -32,8 +32,8 @@ import {
   Feather
 } from 'lucide-react';
 
-import { NEWS_DATA, EVENTS_DATA, SHOP_ITEMS, INITIAL_ANNOUNCEMENTS, DIRECTORY_DATA } from './data';
-import { Announcement, ShopItem } from './types';
+import { NEWS_DATA, EVENTS_DATA, SHOP_ITEMS, INITIAL_ANNOUNCEMENTS, DIRECTORY_DATA } from '@/lib/village-data';
+import { Announcement, ShopItem } from '@/lib/village-types';
 
 export default function App() {
   // Navigation active tab tracking
