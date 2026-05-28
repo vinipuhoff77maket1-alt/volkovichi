@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
-@import "tailwindcss";
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -26,7 +28,19 @@
   --color-bg-shop: #EEF8E8;
   --color-bg-notices: #F3F0FF;
   --color-bg-events: #FFF1E8;
+
+  --text-xxs: 0.65rem;
 }
+
+@layer utilities {
+  .text-xxs { font-size: 0.65rem; line-height: 1rem; }
+}
+
+@layer base {
+  *, ::before, ::after { border-color: var(--color-border); }
+  body { background-color: var(--color-background); color: var(--color-text); font-family: var(--font-sans); }
+}
+
 
 /* Custom styles for apple bento grid, glassmorphism and neumorphism */
 .glass {
