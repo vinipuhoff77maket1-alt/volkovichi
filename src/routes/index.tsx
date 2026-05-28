@@ -1,29 +1,28 @@
 import { createFileRoute } from "@tanstack/react-router";
+import VillageApp from "@/components/VillageApp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Воўкавічы — официальный сайт деревни" },
+      {
+        name: "description",
+        content:
+          "Премиальный современный сайт деревни Воўкавічы: новости, события, доска объявлений, расписания, справочник и контакты.",
+      },
+      { property: "og:title", content: "Воўкавічы — наша деревня, наша семья" },
+      {
+        property: "og:description",
+        content:
+          "Деревня Воўкавічы: события, новости, объявления жителей, расписания и справочник в одном месте.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { property: "og:image", content: "/assets/image2.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "/assets/image2.png" },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
-  component: Index,
+  component: VillageApp,
 });
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
