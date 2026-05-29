@@ -1,4 +1,4 @@
-import { VillageNews, VillageEvent, Announcement, ShopItem, DirectoryItem } from './types';
+import { VillageNews, VillageEvent, Announcement, ShopItem, DirectoryItem } from './village-types';
 
 export const NEWS_DATA: VillageNews[] = [
   {
