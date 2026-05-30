@@ -1238,7 +1238,7 @@ export default function App() {
                   <label className="block text-xxs font-bold uppercase text-text-light tracking-wider mb-1.5">Номер телефона</label>
                   <input 
                     type="text" 
-                    placeholder="+375 (33) 123-45-67"
+                    placeholder="+375 (33) ⁕⁕⁕-⁕⁕-⁕⁕"
                     value={newNoticePhone}
                     onChange={(e) => setNewNoticePhone(e.target.value)}
                     className="w-full px-4 py-3 rounded-2xl bg-white/70 border border-white/60 text-xs text-text font-semibold focus:outline-none focus:border-primary transition-all"
@@ -1310,11 +1310,11 @@ export default function App() {
             <ul className="space-y-2.5 text-xs text-gray-300">
               <li className="flex items-center space-x-2">
                 <Phone className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                <span>+375 (17) 162-42-00 (Сельсовет)</span>
+                <span>+375 (17) ⁕⁕⁕-⁕⁕-⁕⁕ (Сельсовет)</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                <span>+375 (29) 123-45-67 (Староста)</span>
+                <span>+375 (29) ⁕⁕⁕-⁕⁕-⁕⁕ (Староста)</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
